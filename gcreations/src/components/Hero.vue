@@ -37,6 +37,7 @@
   justify-content: center;
   align-content: center;
   margin-bottom: 48px;
+  position: relative;
 }
 .hero-container > h1 {
   font-size: 48px;
@@ -49,17 +50,17 @@
 }
 
 /* LAYER */
-
+/* 
 .layer {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 80%;
-  background-color: rgba(184, 41, 41, 0.5);
+  background-color: rgba(172, 113, 113, 0.5);
   backdrop-filter: blur(80%);
   z-index: -1;
-}
+} */
 
 /* HERO CARDS */
 
@@ -67,9 +68,10 @@
   display: flex;
   justify-content: end;
   gap: 12px;
+  z-index: -1;
 }
 .col:nth-child(even) {
-  margin-top: 48px;
+  margin-top: 0;
 }
 .col:nth-child(odd) {
   margin-top: -48px;
